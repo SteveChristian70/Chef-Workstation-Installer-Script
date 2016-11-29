@@ -30,7 +30,7 @@ Python Script that assists in installing Chef Workstation Mac OS.
    
 3. Now change your url in the script (line 9) to reflect your Chef Server's IP.
 
-  'vi Chef-WorkStation-Installer-Script-master'
+  `vi Chef-WorkStation-Installer-Script-master`
   
 4. Make sure you have met all the Requirments above before the next step.
 
