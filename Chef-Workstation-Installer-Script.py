@@ -21,7 +21,9 @@ ans1 = raw_input("Are you ready to continue? ")
  
 if ans1 == "yes":
 	#webbrowser.open_new_tab(url1)
-	subprocess.call(["sudo su && curl -L https://www.opscode.com/chef/install.sh | bash"], shell=True)
+	subprocess.call(
+	["sudo su && curl -L https://www.opscode.com/chef/install.sh | bash"], shell=True
+	)
 else:
 	sys.exit("Not a valid input sorry!")
 
