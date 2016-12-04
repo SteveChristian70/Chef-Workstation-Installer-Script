@@ -34,9 +34,9 @@ print """
 	Sign in with your account credentials.
 	Go to Administration, your Organization, then Starter Kit, Click 'Download Starter Kit'
 """
-time.sleep(7) # delays for 7 seconds
+time.sleep(7) #Delays for 7 seconds
 	
-webbrowser.open_new_tab(url) #pulls up our Chef Server
+webbrowser.open_new_tab(url) #Pulls up our Chef Server
 
 ans2 = raw_input("Are you ready to continue? ")
 
@@ -45,18 +45,18 @@ if ans2 == "yes":
 else:
 	sys.exit("Not a valid input sorry!")
 	
-#unzips your starter kit .zip and places in your Downloads
+#Unzips your starter kit .zip and places in your Downloads
 zip = zipfile.ZipFile('chef-starter.zip')
 zip.extractall('')
 zip.close()
 
-# Moves the chef-repo to your home directory
+#Moves the chef-repo to your home directory
 subprocess.call(["sudo mv chef-repo $HOME "], shell=True)
 
-#grabs the SSL and puts it in .chef trusted_certs folder
+#Grabs the SSL and puts it in .chef trusted_certs folder
 subprocess.call(["cd / && cd ~/chef-repo && knife ssl fetch"], shell=True)
 
-# Shows the list of all the nodes
+#Shows the list of all the nodes
 subprocess.call(["cd ~/chef-repo && knife client list"], shell=True)
 
 #The \033[1;35m prints color so this statements sticks out more remove the tags if you don't like the color
