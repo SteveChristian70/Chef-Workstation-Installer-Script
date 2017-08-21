@@ -20,7 +20,7 @@ Python Script that assists in installing Chef Workstation on Mac OS.
 - **Chef Server Login and Password**
   - Must log into *YOUR* account on the Chef Server when prompted or you will reset whatever user's credentials you are signed in with.
 
-##Instructions
+## Instructions
 
 1. Download the repo to your machine
   - If it is zipped, unzip it by double clicking it.
